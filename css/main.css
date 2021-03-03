@@ -195,3 +195,22 @@ nav .profile-link a{
     width:100%;
     
 }
+footer{
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#222251;
+    border-top: 35px solid #F4CD2F;
+}
+footer .icons {
+    width:200px;
+    display:flex;
+    justify-content:space-between;
+  
+}
+footer .icons span{
+    color: white;
+    font-size:25px;
+}
