@@ -1,8 +1,10 @@
-
 body{
     box-sizing: border-box;
     margin:0;
     padding:0;
+    font-family:'Exo 2', sans-serif;
+}
+.home-body{
     position:fixed;
     top:0;
     bottom:0;
@@ -16,7 +18,8 @@ a{
 }
 header{
     width:100%;
-    height:140px;
+    min-width: 320px;
+    height:120px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 
@@ -50,7 +53,7 @@ header .icons span{
 nav {
     display:grid;
     grid-template-columns:1fr 1fr;
-    height:90px;
+    height:70px;
 }
 nav .nav-logo-container{
     display:flex;
@@ -64,21 +67,131 @@ nav .profile-link{
     margin-right:50px;
 }
 nav .nav-logo-container img{
-    width:150px;
+    width:120px;
     height:auto;
     justify-self: center;
 }
-nav .nav-logo-container a{
+nav .profile-link a{
+    font-weight: bold;
     color:black;
     border-bottom:1px solid black;
 }
 
 
-.main{
+.home-main{
+    position:relative;
+    display:flex;
+    flex-direction: column;
     width:100%;
-    height:500px;
+    height:100vh;
+    justify-items: center;
+    align-items: center;
     background-image: url(../assets/img/barco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.home-main:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+.home-main h1{
+    position:relative;
+    width:60%;
+    height:100px;
+    margin: 0 auto;
+    padding: 50px;
+    padding-top:100px;
+    text-align: center;
+    font-size:40px;
+    color:white;
+}
+.home-main button{
+    position:relative;
+    width:150px;
+    height:40px;
+    font-size:20px;
+    font-weight:bold;
+    background-color:#F4CD2F;
+    color:#222251;
+    border-radius:10px;
+    border:transparent;    
+}
+.posts-main{
+    display:grid;
+    
+}
+.posts-news-container{
+    background-color:#e6e9ed;
+    padding:0px 50px 40px;
+}
+.posts-main-new{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    grid-template-rows: 2fr;
+}
+.posts-main-new h3{
+    
+    font-size:25px;
+}
+.posts-news-img-container{
+    display:grid;
+    grid-column:1;
+}
+.posts-news-img-container img{
+    width:80%;
+    max-width:380px;
+    height:auto;
+    justify-self: center;
+}
+.blogs-news-info-container{
+    max-width: 80%;
+    max-height: 50%;
+    grid-column:2;
+
+}
+.posts-button{
+    border: 1px solid #222251;
+    padding:10px 15px;
+    font-size:12px;
+}
+.posts-news-info-container p{
+    margin-bottom:35px;
+    text-align:justify;
+}
+.posts-news-info-container h2{
+    margin:0;
+}
+.posts-post-container div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin:10px 50px;
+    justify-content:space-between;
+    align-items: baseline;
+
+}
+.posts-post-container h3{
+    grid-column:1/4;
+    border-bottom: 1px solid #222251;
+    padding-bottom:20px;
+    text-align: center;
+    font-size:25px
+}
+.posts-post-container .post-container{
+    max-width:30%;
+    margin-bottom: 50px;
+
+}
+.posts-post-container .post-container p{
+    margin-bottom:35px;
+}
+.posts-post-container .post-container img{
+    width:100%;
+    
 }
