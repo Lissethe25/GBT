@@ -3,24 +3,30 @@
     margin:0;
     padding:0;
 }
+body{
+    font-family:'Exo 2', sans-serif;;
+}
 a{
     text-decoration:none;
     color: black;
 }
 .background{
-    background-image: url(../assets/img/barco_mobile.jpg);
+    background-image: url(../assets/img/barco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 header{
+    position:relative;
     width:100%;
     min-width:320px;
     height:60px;
     display:flex;
+    align-items: center;
     
 }
 header .logo-container{
+    position:relative;
     width:50%;
     display:flex;
     align-items: center;
@@ -29,18 +35,21 @@ header .logo-container{
     padding-left:20px;
 }
 header .logo-container img{
+    position:relative;
     width:120px;
     height:auto;
     align-self:center;
 }
 
 header .header-icons-container{
+    position:relative;
     display:flex;
     width:50%;
     height:65px;  
     padding-right:20px;  
 }
 header .header-icons-container .icons{
+    position:relative;
     width: 100%;
     height: auto;
     display:flex;
@@ -55,41 +64,42 @@ header .icons a{
 }
 
 header .icons span{
-    color: #222251;
-    font-size:30px;
+    position:relative;
+    color:white;
+    font-size:25px;
 }
 
 .background:before {
+    height:300px;
 	content:'';
 	position: absolute;
-        top: 0;
+    top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
 }
+
 .hero{
     position:relative;
-    display:grid;
+    display:flex;
     width:100%;
     min-width:320px;
     height:300px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    align-items:center;
+    justify-content: center;
 }
 .hero div{
     position:relative;
-    grid-column: 2/8;
-    grid-row: 2/4;
-    margin:0;
+    margin:0 20px;
 }
 .hero div h1{
     margin:0;
-    font-size:50px;
+    padding-top:40px;
+    font-size:40px;
     font-family: 'Exo 2', sans-serif;
     color:white;
-    line-height:50px;   
+
+    
 }
 .hero div p{
     margin:0;
@@ -99,31 +109,56 @@ header .icons span{
     font-family: 'Exo 2', sans-serif;
     color:white;
 }
-.services{
-    background-color:white;
-    width:100%;
+.posts-main{
+    display:grid;
 }
-.services .services-title{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    padding:30px 20px 0px 20px;
-    color:#222251;
+.posts-news-container{
+    background-color:#e6e9ed;
+    padding:40px 50px 40px;
+}
+
+
+
+.posts-button{
+    border: 1px solid #222251;
+    padding:10px 15px;
+    font-size:12px;
 
 }
-.services .services-container--cards{
+
+.posts-post-container div{
     display:flex;
-    flex-wrap: wrap;
-    padding:30px;
-    padding-top:20px;
-    justify-content:center
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin:10px 20px;
+    justify-content:center;
+
 }
-.services .services-container--cards .cards{
-    width:80%;
-    height:150px;
-    margin:20px;
-    background-color:rgb(246, 246, 246);
-    border-radius: 21px;
-    box-shadow:  4px 4px 8px #d3d3d3,
-                 -3px -3px 6px #ededed;
+.posts-post-container h3{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-bottom:20px;
+    padding-top:20px;
+    text-align: center;
+    font-size:25px;
+    color:#222251;
+
+    
+}
+.posts-post-container .post-container{
+    max-width:90%;
+    padding-bottom:20px;
+    margin-bottom: 50px;
+}
+.posts-post-container .post-container h4{
+    margin-top:20px;
+
+}
+.posts-post-container .post-container p{
+    margin-top:15px;
+    margin-bottom:35px;
+    text-align:justify;
+}
+.posts-post-container .post-container img{
+    width:100%;
 }

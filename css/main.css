@@ -3,20 +3,11 @@
     margin:0;
     padding:0;
 }
-body{
-    font-family:'Exo 2', sans-serif;;
-}
-.background{
-    background-image: url(../assets/img/barco_mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 header{
-    padding-top:20px;
+    height:100px;
 }
 header .logo-container{
-    padding-top:30px;
     padding-left:30px;
 }
 header .header-icons-container{
@@ -26,107 +17,41 @@ header .logo-container img{
     width:140px;
     height:auto;
 }
+header .icons a{
+    margin:0 10px;
+}
+header .icons span{
+    font-size:30px;
+}
+.background:before {
+    height:500px;
+}
 .hero{
     height:500px;
 }
 .hero div{
-    position:relative;
-    grid-column: 2/8;
-    grid-row: 2/4;
     margin:0;
 }
 .hero div h1{
-    font-size:70px;
+    font-size:80px;
     line-height:normal;  
-    align-self:flex-start;
+    padding-top:60px;
 }
 .hero div p{
     font-size:30px;
 }
-.services{
-    width:100%;
-}
-.services .services-title{
-    font-size: 30px;
-    padding-top:30px;
-}
-.services .services-container--cards{
-    padding:30px;
-}
-.services .services-container--cards .cards{
-    width:40%;
-    min-width:424px;
-    height:200px;
-}
-.posts-main{
-    display:grid;
-    
-}
-.posts-news-container{
-    background-color:#e6e9ed;
-    padding:0px 50px 40px;
-}
-.posts-main-new{
-    display:grid;
-    grid-template-columns:1.2fr 0.8fr;
-    grid-template-rows: 2fr;
-}
-.posts-main-new h3{
-    
-    font-size:25px;
-}
-.posts-news-img-container{
-    display:grid;
-    grid-column:1;
-}
-.posts-news-img-container img{
-    width:80%;
-    max-width:380px;
-    height:auto;
-    justify-self: center;
-}
-.blogs-news-info-container{
-    max-width: 80%;
-    max-height: 50%;
-    grid-column:2;
-
-}
-.posts-button{
-    border: 1px solid #222251;
-    padding:10px 15px;
-    font-size:12px;
-}
-.posts-news-info-container p{
-    margin-bottom:35px;
-    text-align:justify;
-}
-.posts-news-info-container h2{
-    margin:0;
-}
 .posts-post-container div{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
     margin:10px 50px;
     justify-content:space-between;
     align-items: baseline;
-
 }
 .posts-post-container h3{
-    grid-column:1/4;
-    border-bottom: 1px solid #222251;
-    padding-bottom:20px;
-    text-align: center;
-    font-size:25px
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:40px;
+    
 }
 .posts-post-container .post-container{
-    max-width:30%;
-    margin-bottom: 50px;
-
-}
-.posts-post-container .post-container p{
-    margin-bottom:35px;
-}
-.posts-post-container .post-container img{
-    width:100%;
+    max-width:28%;
+    padding-bottom:0px;
 }
