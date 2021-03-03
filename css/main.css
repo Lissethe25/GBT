@@ -51,3 +51,76 @@ header .logo-container img{
     min-width:424px;
     height:200px;
 }
+.posts-main{
+    display:grid;
+    
+}
+.posts-news-container{
+    background-color:#e6e9ed;
+    padding:0px 50px 40px;
+}
+.posts-main-new{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    grid-template-rows: 2fr;
+}
+.posts-main-new h3{
+    
+    font-size:25px;
+}
+.posts-news-img-container{
+    display:grid;
+    grid-column:1;
+}
+.posts-news-img-container img{
+    width:80%;
+    max-width:380px;
+    height:auto;
+    justify-self: center;
+}
+.blogs-news-info-container{
+    max-width: 80%;
+    max-height: 50%;
+    grid-column:2;
+
+}
+.posts-button{
+    border: 1px solid #222251;
+    padding:10px 15px;
+    font-size:12px;
+}
+.posts-news-info-container p{
+    margin-bottom:35px;
+    text-align:justify;
+}
+.posts-news-info-container h2{
+    margin:0;
+}
+.posts-post-container div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin:10px 50px;
+    justify-content:space-between;
+    align-items: baseline;
+
+}
+.posts-post-container h3{
+    grid-column:1/4;
+    border-bottom: 1px solid #222251;
+    padding-bottom:20px;
+    text-align: center;
+    font-size:25px
+}
+.posts-post-container .post-container{
+    max-width:30%;
+    margin-bottom: 50px;
+
+}
+.posts-post-container .post-container p{
+    margin-bottom:35px;
+}
+.posts-post-container .post-container img{
+    width:100%;
+    
+}
