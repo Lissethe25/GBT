@@ -109,32 +109,34 @@ header .icons span{
     font-family: 'Exo 2', sans-serif;
     color:white;
 }
+/* --------------------------- */
 .events{
     width:100%;
-    height:auto;
-    text-align: center;
-    background-color: #e4e3e0;
-    padding-bottom:20px;
-
+    padding:20px 50px;
+    border-bottom: 1px solid #222251;
 }
-.events-container{
-    display:flex;
-    height:316px;
-    overflow-x:scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
-.events-container-event{
-    scroll-snap-align:center;
-    margin:0 30px 40px 30px;
-}
-
 .events h2{
-    font-size:40px;
-    padding:20px 0;
-    
+    font-size: 25px;
     color:#222251;
+    text-align: center;
+    padding:0px 0px 20px;
 }
+.events .events-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.events .events-container figure{
+    width: 90%;
+    min-width: 300px;
+    margin-bottom:20px;
+}
+.events .events-container figure img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* -------------------------- */
 .posts-main{
     display:grid;
 }
@@ -142,8 +144,6 @@ header .icons span{
     background-color:#e6e9ed;
     padding:40px 50px 40px;
 }
-
-
 
 .posts-button{
     border: 1px solid #222251;
