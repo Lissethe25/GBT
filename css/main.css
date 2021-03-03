@@ -1,4 +1,11 @@
-
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Exo 2', sans-serif;;
+}
 .background{
     background-image: url(../assets/img/barco_mobile.jpg);
     background-repeat: no-repeat;
@@ -122,5 +129,4 @@ header .logo-container img{
 }
 .posts-post-container .post-container img{
     width:100%;
-    
 }
