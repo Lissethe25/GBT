@@ -109,6 +109,32 @@ header .icons span{
     font-family: 'Exo 2', sans-serif;
     color:white;
 }
+.events{
+    width:100%;
+    height:auto;
+    text-align: center;
+    background-color: #e4e3e0;
+    padding-bottom:20px;
+
+}
+.events-container{
+    display:flex;
+    height:316px;
+    overflow-x:scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.events-container-event{
+    scroll-snap-align:center;
+    margin:0 30px 40px 30px;
+}
+
+.events h2{
+    font-size:40px;
+    padding:20px 0;
+    
+    color:#222251;
+}
 .posts-main{
     display:grid;
 }
@@ -161,4 +187,23 @@ header .icons span{
 }
 .posts-post-container .post-container img{
     width:100%;
+}
+footer{
+    width:100%;
+    height:90px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#222251;
+    border-top: 25px solid #F4CD2F;
+}
+footer .icons {
+    width:200px;
+    display:flex;
+    justify-content:space-between;
+  
+}
+footer .icons span{
+    color: white;
+    font-size:25px;
 }
