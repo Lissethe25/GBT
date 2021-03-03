@@ -11,6 +11,11 @@ body{
     left:0;
     right:0;
 }
+.grid-container{
+    max-width:980px;
+    margin:auto;
+}
+
 a{
     text-decoration:none;
     display:inline-block;
@@ -167,7 +172,7 @@ nav .profile-link a{
 .posts-news-info-container h2{
     margin:0;
 }
-.posts-post-container div{
+.posts-post-container .posts-infografías{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
