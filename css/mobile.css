@@ -109,34 +109,72 @@ header .icons span{
     font-family: 'Exo 2', sans-serif;
     color:white;
 }
-/* --------------------------- */
+
+/* -------------------------- */
+
 .events{
-    width:100%;
-    padding:20px 50px;
-    border-bottom: 1px solid #222251;
+    padding-bottom:30px;
 }
 .events h2{
+    
     font-size: 25px;
     color:#222251;
     text-align: center;
-    padding:0px 0px 20px;
+    padding:20px 0px 20px;
 }
-.events .events-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+.events-container-all{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%
+    
 }
-.events .events-container figure{
-    width: 90%;
-    min-width: 300px;
-    margin-bottom:20px;
-}
-.events .events-container figure img{
-    width:100%;
-    border-radius:10px;
+.events-container-all .events-arrow{
+    display:inline-block;
+    padding:0 15px;
 }
 
+.events-slider-container{
+    display:inline-block;
+    overflow:auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size:0;
+    margin:0;
+}
+.events-slider .event-slider-slide .event{
+    scroll-snap-align:center;
+}
+
+/* ELIMINAR LA SCROLL BAR
+::-webkit-scrollbar {display: none;} */
+.event{
+    margin:0;
+    display:inline-block;
+    width:70%;
+    height:auto;
+    /* padding-bottom:30px; */
+}
+.event img{
+    width:100%;
+    padding:0 10px;
+}
+
+/* .slider-bullet-list{
+    text-align:center;
+    margin-top:10px;
+}
+.slider-bullet{
+    display:inline-block;
+    inline-size:15px;
+    block-size: 15px;
+    background: white;
+    border-radius:50%;
+} */
+
 /* -------------------------- */
+
+
 .posts-main{
     display:grid;
 }
@@ -168,7 +206,7 @@ header .icons span{
     text-align: center;
     font-size:25px;
     color:#222251;
-
+    border-top: 1px solid #222251;
     
 }
 .posts-post-container .post-container{
