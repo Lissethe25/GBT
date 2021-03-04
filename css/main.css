@@ -219,3 +219,42 @@ footer .icons span{
     color: white;
     font-size:25px;
 }
+
+.blogpost-img-container{
+    width:50%;
+    padding:20px;
+    margin:0 auto;
+
+}
+.blogpost-img-container img{
+    width:70%;
+    margin:0 15%;
+}
+.blogpost-main-container{
+    width:90%;
+    margin: 0 auto;
+}
+.blogpost-main-container h3{
+    border-bottom: 1px solid #222251;
+    padding-bottom:10px;
+
+}
+.blogpost-main-container article h1{
+    font-size:30px;
+}
+.contact-main-container{
+    display:grid;
+    width:90%;
+    grid-template-columns: 1fr 1fr;
+    margin:0 auto;
+}
+.contact-main-container .contact-left img{
+    width:100px;
+}
+.contact-main-container .contact-left{
+    display:flex;
+
+}
+.contact-main-container .contact-right img{
+    width:100px;
+}
