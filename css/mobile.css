@@ -133,6 +133,16 @@ header .icons span{
     display:inline-block;
     padding:0 15px;
 }
+::-webkit-scrollbar{
+    width:7px;
+    background-color: #F4CD2F;
+   
+}
+::-webkit-scrollbar-thumb{
+    width:6px;
+    background:#222251;
+    border-radius: 5px;
+}
 
 .events-slider-container{
     display:inline-block;
@@ -146,18 +156,20 @@ header .icons span{
     scroll-snap-align:center;
 }
 
-/* ELIMINAR LA SCROLL BAR
-::-webkit-scrollbar {display: none;} */
+
+::-webkit-scrollbar {display: none;}
+
 .event{
     margin:0;
     display:inline-block;
-    width:70%;
+    width:90%;
     height:auto;
     /* padding-bottom:30px; */
 }
 .event img{
     width:100%;
-    padding:0 10px;
+    padding:10px 5px;
+    
 }
 
 /* .slider-bullet-list{
@@ -195,8 +207,6 @@ header .icons span{
     flex-direction: row;
     flex-wrap:wrap;
     margin:10px 20px;
-    justify-content:center;
-
 }
 .posts-post-container h3{
     margin-top:10px;
@@ -210,18 +220,22 @@ header .icons span{
     
 }
 .posts-post-container .post-container{
-    max-width:90%;
+    width:70%;
+    min-width:230px;
+    max-width:280px;
     padding-bottom:20px;
-    margin-bottom: 50px;
+    margin:0 auto 50px;
 }
 .posts-post-container .post-container h4{
     margin-top:20px;
+    font-size: 14px;
 
 }
 .posts-post-container .post-container p{
     margin-top:15px;
     margin-bottom:35px;
     text-align:justify;
+    font-size:14px;
 }
 .posts-post-container .post-container img{
     width:100%;

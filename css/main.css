@@ -3,7 +3,11 @@
     margin:0;
     padding:0;
 }
-
+.limit_grow{
+    max-width: 1000px;
+    margin:0 auto;
+    
+}
 header{
     height:100px;
 }
@@ -47,8 +51,20 @@ header .icons span{
 .events-slider-container{
     width:50%;
 }
+::-webkit-scrollbar{
+    display:inline-block;
+    width:7px;
+    background-color: #F4CD2F;
+   
+}
+::-webkit-scrollbar-thumb{
+    background:#222251;
+}
+.posts-post-container{
+    margin:0 50px;
+}
 .posts-post-container div{
-    margin:10px 50px;
+    margin:auto;
     justify-content:space-between;
     align-items: baseline;
 }
@@ -62,6 +78,13 @@ header .icons span{
 .posts-post-container .post-container{
     max-width:28%;
     padding-bottom:0px;
+}
+.posts-post-container .post-container h4{
+    font-size: 16px;
+
+}
+.posts-post-container .post-container p{
+    font-size:16px;
 }
 
 footer{
