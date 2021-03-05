@@ -154,7 +154,7 @@ nav .profile-link a{
     height:auto;
     justify-self: center;
 }
-.blogs-news-info-container{
+.posts-news-info-container{
     max-width: 80%;
     max-height: 50%;
     grid-column:2;
@@ -176,8 +176,8 @@ nav .profile-link a{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    margin:10px 50px;
-    justify-content:space-between;
+    margin:10px 0px;
+    justify-content:space-around;
     align-items: baseline;
 
 }
@@ -195,9 +195,11 @@ nav .profile-link a{
 }
 .posts-post-container .post-container p{
     margin-bottom:35px;
+    text-align: justify;
 }
 .posts-post-container .post-container img{
     width:100%;
+
     
 }
 footer{
@@ -233,6 +235,7 @@ footer .icons span{
 .blogpost-main-container{
     width:90%;
     margin: 0 auto;
+    padding-bottom:50px;
 }
 .blogpost-main-container h3{
     border-bottom: 1px solid #222251;
@@ -242,19 +245,61 @@ footer .icons span{
 .blogpost-main-container article h1{
     font-size:30px;
 }
-.contact-main-container{
-    display:grid;
-    width:90%;
-    grid-template-columns: 1fr 1fr;
-    margin:0 auto;
+.contact-main{
+    width:100%;
+    background-color:#e6e9ed;
 }
-.contact-main-container .contact-left img{
-    width:100px;
-}
-.contact-main-container .contact-left{
+.contact-main .contact-main-container{
     display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:90%;
+    padding-bottom:50px;
+    padding-top:40px;
+    padding:40px 20px 50px;
+}
 
+.contact-main-container .contact-left{
+    
+    display:flex;
+    flex-direction:row;
+}
+.contact-main-container .contact-right{
+    
+    display:flex;
+    flex-direction:row;
+}
+
+.contact-main-container .contact-left img{
+    width:80px;
+    height:fit-content;
+}
+.contact-main-container .contact-left div{
+    margin-left: 20px;
+}
+
+.contact-main-container .contact-left div p{
+    width:200px;
+    margin-top:10px;
+}
+.contact-main-container .contact-left div a{
+    display: inline-block;
+    padding-bottom:3px;
+    border-bottom: 1px solid #222251;
+}
+.contact-main-container .contact-right div a{
+    display: inline-block;
+    padding-bottom:3px;
+    border-bottom: 1px solid #222251;
 }
 .contact-main-container .contact-right img{
-    width:100px;
+    width:80px;
+    height:fit-content;
+}
+.contact-main-container .contact-right div{
+    margin-left: 20px;
+}
+.contact-main-container .contact-right div p{
+    width:200px;
+    margin-top:10px;
 }
