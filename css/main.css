@@ -11,6 +11,22 @@ body{
     left:0;
     right:0;
 }
+.background{
+    position:relative;
+    background-image: url(../assets/img/barco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.background:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
 .grid-container{
     max-width:980px;
     margin:auto;
@@ -27,7 +43,9 @@ header{
     height:120px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-
+}
+.header-index{
+    height:65px;
 }
 .header-icons-container{
     width:100%;
@@ -56,16 +74,36 @@ header .icons span{
     font-size:25px;
 }
 nav {
+
     display:grid;
     grid-template-columns:1fr 1fr;
     height:70px;
+}
+nav .nav-logo-container-index{
+    display:flex;
+    margin-left:50px;
+    
+}
+nav .nav-logo-container-index img{
+    position:absolute;
+    width:140px;
+    height:auto;
+    justify-self: center;
 }
 nav .nav-logo-container{
     display:flex;
     margin-left:50px;
     align-items: center;
 }
+
 nav .profile-link{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    margin-right:50px;
+}
+nav .profile-link-index{
+    position:relative;
     display:flex;
     align-items:center;
     justify-content:flex-end;
@@ -76,56 +114,75 @@ nav .nav-logo-container img{
     height:auto;
     justify-self: center;
 }
+nav .profile-link-index a{
+    margin:0 0 0 20px;
+    font-weight: bold;
+    font-size:20px;
+    color:white;
+    padding-top:20px;
+    border-bottom:1px solid white;
+}
 nav .profile-link a{
     font-weight: bold;
-    color:black;
-    border-bottom:1px solid black;
+    font-size:18px;
+    color:#222251;
+    border-bottom:1px solid #222251;
 }
 
-
 .home-main{
-    position:relative;
     display:flex;
     flex-direction: column;
     width:100%;
     height:100vh;
     justify-items: center;
     align-items: center;
-    background-image: url(../assets/img/barco.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-.home-main:before {
-	content:'';
-	position: absolute;
-        top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.4);
-}
+
 .home-main h1{
     position:relative;
-    width:60%;
-    height:100px;
-    margin: 0 auto;
-    padding: 50px;
-    padding-top:100px;
+    height:auto;
+    padding-top:70px;
+    padding-bottom:50px;
+    margin:0;
+    text-align: center;
+    font-size:80px;
+    color:#222251;
+    text-shadow: 2px 2px 15px white,
+    -2px -2px 15px white;
+}
+.home-main p{
+    position:relative;
     text-align: center;
     font-size:40px;
+    margin:0;
+    color:#F4CD2F;
+    text-shadow: 2px 2px 15px #222251,
+    -2px -2px 15px #222251
+}
+.home-main-icons{
+    position:relative;
+    padding: 20px 0px;
+}
+.home-main-icons a{
+    font-size:40px;
     color:white;
+    padding:10px 30px 0px;
 }
 .home-main button{
     position:relative;
-    width:150px;
+    width:200px;
     height:40px;
     font-size:20px;
     font-weight:bold;
-    background-color:#F4CD2F;
-    color:#222251;
+    background-color:#222251;
     border-radius:10px;
-    border:transparent;    
+    border:transparent;   
+    margin-top:50px; 
+    box-shadow:  2px 2px 5px #d0d0d0,
+             -2px -2px 5px #f0f0f0;
+}
+.home-main button a{
+    color:white;
 }
 .posts-main{
     display:grid;
@@ -191,7 +248,6 @@ nav .profile-link a{
 .posts-post-container .post-container{
     max-width:30%;
     margin-bottom: 50px;
-
 }
 .posts-post-container .post-container p{
     margin-bottom:35px;
