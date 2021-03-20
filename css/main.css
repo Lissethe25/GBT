@@ -14,34 +14,40 @@ header{
 header .logo-container{
     padding-left:30px;
 }
-header .header-icons-container{
-    padding-right:30px;  
-}
+
 header .logo-container img{
     width:140px;
     height:auto;
 }
-header .icons a{
-    margin:0 10px;
-}
-header .icons span{
-    font-size:30px;
-}
+
+
 .background:before {
     height:500px;
 }
+
+
+.icons a{
+    margin:0 10px;
+    color:white;
+}
+.icons span{
+    font-size:30px;
+}
 .hero{
+    display:flex;
+    flex-direction: column;
     height:500px;
+    align-items:center;
+    justify-content:center;
 }
-.hero div{
+.hero__text{
     margin:0;
+    
 }
-.hero div h1{
-    font-size:80px;
-    line-height:normal;  
-    padding-top:60px;
+.hero__text h1{
+    font-size:60px;
 }
-.hero div p{
+.hero__text p{
     font-size:30px;
 }
 .events h2{
